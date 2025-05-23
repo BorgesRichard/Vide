@@ -22,7 +22,7 @@ for line in lines:
     else:
         translated.append(GoogleTranslator(source='auto', target='pt').translate(line))
 
-with open(f"{GET_FOLDER}/{filename}_traduzida.srt", "w", encoding="utf-8") as f:
+with open(f"{GET_FOLDER}/{filename}_translated.srt", "w", encoding="utf-8") as f:
     f.writelines(translated)
 
 print("Translation finalised.")
